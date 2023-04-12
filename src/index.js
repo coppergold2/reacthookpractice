@@ -2,6 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Ustate from './usestate';
 import Ueffect from './useeffect'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom"
+
+const router createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>
+  }
+]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
