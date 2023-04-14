@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 export default function Ueffect(){
-    const [resourceType, setResourceType] = useState('post')
+    const [resourceType, setResourceType] = useState('posts')
     const [items, setItems] = useState([])
 
     useEffect(() => {

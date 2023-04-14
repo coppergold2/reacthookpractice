@@ -5,20 +5,22 @@ import Ueffect from './useeffect'
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom"
+} from "react-router-dom";
 
-const router createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App/>
+    path: "usestate",
+    element: <Ustate/>
+  },
+  {
+    path: "useeffect",
+    element: <Ueffect/>
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Ueffect />
-  </React.StrictMode>
+  <RouterProvider router={router}/>
 );
 
 // If you want to start measuring performance in your app, pass a function
