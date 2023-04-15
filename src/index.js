@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Ustate from './usestate';
 import Ueffect from './useeffect'
+import Ueffect2 from './useeffect2';
+import Umemo from './usememo'
+import Uref from './useref'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,6 +18,18 @@ const router = createBrowserRouter([
   {
     path: "useeffect",
     element: <Ueffect/>
+  },
+  {
+    path: "useeffect2",
+    element: <Ueffect2/>
+  },
+  {
+    path: "usememo",
+    element: <Umemo/>
+  },
+  {
+    path: "useref",
+    element: <Uref/>
   }
 ]);
 
