@@ -5,10 +5,12 @@ import Ueffect from './useeffect'
 import Ueffect2 from './useeffect2';
 import Umemo from './usememo'
 import Uref from './useref'
+import Ucontext from './usecontextfolder/usecontext'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "useref",
     element: <Uref/>
+  },
+  {
+    path: "usecontext",
+    element: <Ucontext/>
   }
 ]);
 
