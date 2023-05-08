@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FunctionContextComponent from './FunctionContextComponent'
 import ClassContextComponent from './ClassContextComponent'
+import { ThemeProvider } from './ThemeContext'
 
 export const ThemeContext = React.createContext()
 
@@ -14,7 +15,7 @@ export default function Ucontext(){
 
 return (
     <>
-        <ThemeContext.Provider value = {darkTheme}>
+        <ThemeContext.Provider value ={darkTheme}>
             <button onClick={toggleTheme}> toggle Theme</button>
             <FunctionContextComponent />
             <ClassContextComponent/>
