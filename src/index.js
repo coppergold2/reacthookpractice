@@ -6,11 +6,11 @@ import Ueffect2 from './useeffect2';
 import Umemo from './usememo'
 import Uref from './useref'
 import Ucontext from './usecontextfolder/usecontext'
+import Ucontextcustom from './usecontextfoldercustom/usecontext';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
 
 const router = createBrowserRouter([
   {
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "usecontext",
     element: <Ucontext/>
+  },
+  {
+    path: "usecontextcustom",
+    element: <Ucontextcustom/>
   }
 ]);
 
