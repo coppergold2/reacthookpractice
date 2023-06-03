@@ -6,6 +6,9 @@ import Ueffect2 from './useeffect2';
 import Umemo from './usememo'
 import Uref from './useref'
 import Ucontext from './usecontextfolder/usecontext'
+import Ureducer from './usereducer'
+import Ureducer2 from './usereducer2'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -36,6 +39,14 @@ const router = createBrowserRouter([
   {
     path: "usecontext",
     element: <Ucontext/>
+  },
+  {
+    path: "usereducer",
+    element: <Ureducer/>
+  },
+  {
+    path: "usereducer2",
+    element: <Ureducer2/>
   }
 ]);
 
