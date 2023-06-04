@@ -22,7 +22,6 @@ export function ThemeProvider ({children}){
             <ThemeUpdateContext.Provider value = {toggleTheme}>
             {children}
             </ThemeUpdateContext.Provider>
-            
         </ThemeContext.Provider>
     )
 
