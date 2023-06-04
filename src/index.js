@@ -46,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "usereducer2",
     element: <Ureducer2/>
+  },
+  {
+  path: "usecontextcustom",
+  element: <Ucontextcustom/>
   }
 ]);
 
