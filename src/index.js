@@ -8,7 +8,8 @@ import Uref from './useref'
 import Ucontext from './usecontextfolder/usecontext'
 import Ureducer from './usereducer'
 import Ureducer2 from './usereducer2'
-import Ucontextcustom from './usecontextfoldercustom/usecontext';
+import Ucontextcustom from './usecontextfoldercustom/usecontext'
+import Ucallback from './usecallback'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
   path: "usecontextcustom",
   element: <Ucontextcustom/>
+  },
+  {
+    path: "usecallback",
+    element: <Ucallback/>
   }
 ]);
 
