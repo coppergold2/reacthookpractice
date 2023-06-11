@@ -1,0 +1,2 @@
+when want to useeffect the things that user can directly see (DOM, styles etc), use uselayouteffect instead because it is synchronous 
+instead of asynchorus like useefffect
