@@ -13,7 +13,7 @@ export default function App(){
 
     const theme = {
         backgroundColor: dark ? '#333' : '#FFF',
-        Color: dark ?   '#333' :  '#FFF'  
+        color: dark ?   '#FFF'  :   '#333'
     }
 
     return (
