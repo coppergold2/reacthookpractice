@@ -9,9 +9,10 @@ import Ucontext from './usecontextfolder/usecontext'
 import Ureducer from './usereducer'
 import Ureducer2 from './usereducer2'
 import Ucontextcustom from './usecontextfoldercustom/usecontext'
-import Ucallback from './usecallback'
+import Ucallback from './usecallbackfolder/usecallback'
 import Ucustom from './customhook/App'
 import Utransition from './useTransition'
+import Udeferredvalue from './usedefferedvaluefolder/usedeferredvalue';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
   {
     path: "usetransition",
     element: <Utransition/>
+  },
+  {
+    path: "usedefferedvalue",
+    element: <Udeferredvalue/>
   }
 ]);
 

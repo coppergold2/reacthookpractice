@@ -1,3 +1,8 @@
+/*
+In React, useMemo is a hook that allows you to memoize the result of a computation, 
+so that it is only recalculated when the dependencies change. 
+It is used to optimize the performance of your React components by avoiding unnecessary re-renders.
+*/
 import React, {useState, useMemo, useEffect} from 'react'
 
 export default function Umemo(){
@@ -8,7 +13,7 @@ export default function Umemo(){
         return slowFunction(number)
     },[number])
 
-    const themeStyles = useMemo( () => {
+    const themeStyles = useMemo(() => {
         return{
         backgroundColor: dark? 'black' : 'white',
         color: dark ? 'white' : 'black'}
